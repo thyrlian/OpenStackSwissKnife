@@ -33,4 +33,9 @@ RUN git clone https://github.com/hashicorp/terraform.git ${TERRAFORM_HOME} && \
     git checkout v${TERRAFORM_VERSION} && \
     scripts/build.sh
 
+# Nova
+RUN apt install -y python-dev python-pip && \
+    pip install --upgrade pip && \
+    pip install python-openstackclient
+
 WORKDIR /tools
