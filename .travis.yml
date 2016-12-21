@@ -1,0 +1,14 @@
+sudo: required
+
+language: bash
+
+services:
+  - docker
+
+install:
+  - git clone https://github.com/thyrlian/OpenStackSwissKnife.git ~/OpenStackSwissKnife
+
+script:
+  - docker build -t openstack-swissknife ~/OpenStackSwissKnife
+  - docker images
+  - echo "terraform version && nova --version" | docker run -i openstack-swissknife
