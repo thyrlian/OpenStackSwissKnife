@@ -26,7 +26,7 @@ ENV GOPATH /tools/go
 ENV PATH ${PATH}:/usr/local/go/bin:${GOPATH}/bin
 
 # Terraform
-ENV TERRAFORM_VERSION=0.8.1
+ENV TERRAFORM_VERSION=0.8.2
 ENV TERRAFORM_HOME ${GOPATH}/src/github.com/hashicorp/terraform
 WORKDIR ${TERRAFORM_HOME}
 RUN git clone https://github.com/hashicorp/terraform.git ${TERRAFORM_HOME} && \
