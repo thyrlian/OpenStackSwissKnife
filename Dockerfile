@@ -41,6 +41,7 @@ RUN apt install -y python-dev python-pip && \
     # but you may still need some of them
     # since the openstackclient's coverage is not yet sufficient
     # openstackclient already contains cinder, glance, nova clients
+    pip install gnocchiclient && \
     pip install python-barbicanclient && \
     pip install python-ceilometerclient && \
     pip install python-cinderclient && \
@@ -48,7 +49,6 @@ RUN apt install -y python-dev python-pip && \
     pip install python-designateclient && \
     pip install python-fuelclient && \
     pip install python-glanceclient && \
-    pip install python-gnocchiclient && \
     pip install python-heatclient && \
     pip install python-magnumclient && \
     pip install python-manilaclient && \
