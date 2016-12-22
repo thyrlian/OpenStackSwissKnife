@@ -15,7 +15,7 @@ MAINTAINER Jing Li <thyrlian@gmail.com>
 
 # Essential tools
 RUN apt-get update -y && \
-    apt-get install -y git wget zip subnetcalc
+    apt-get install -y git wget zip build-essential libssl-dev subnetcalc
 
 # Go
 ENV GO_VERSION=1.7.4
