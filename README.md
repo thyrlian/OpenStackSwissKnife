@@ -24,6 +24,10 @@ exit
 docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
 ```
 
+In order to use the OpenStackClient, you must [set the environment variables using the OpenStack RC file](http://docs.openstack.org/user-guide/common/cli-set-environment-variables-using-openstack-rc.html) first.  The OpenStack RC file can be downloaded from the OpenStack Dashboard by:
+
+**OpenStack** -> **Project** -> **COMPUTE** -> **Access & Security** -> **API Access** -> **Download OpenStack RC File**
+
 ## Useful Links
 * [Terraform Commands](https://www.terraform.io/docs/commands/)
 * [Terraform for OpenStack](https://www.terraform.io/docs/providers/openstack/)
