@@ -29,3 +29,7 @@ docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
 * [Terraform for OpenStack](https://www.terraform.io/docs/providers/openstack/)
 * [OpenStackClient Command List](http://docs.openstack.org/developer/python-openstackclient/command-list.html)
 * [OpenStack CLI cheat sheet](http://docs.openstack.org/user-guide/cli-cheat-sheet.html)
+
+## License
+
+Copyright (c) 2016 Jing Li. It is released under the [MIT License](http://opensource.org/licenses/MIT). See the [LICENSE](https://github.com/thyrlian/OpenStackSwissKnife/blob/master/LICENSE) file for details.
